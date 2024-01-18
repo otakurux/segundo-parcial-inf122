@@ -1,0 +1,26 @@
+:root {
+    --white: #fff;
+}
+
+.meta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-nota {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 15px;
+    background-color: var(--white);
+    display: flex;
+    width: 687px;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton {
+    background-color: var(--white);
+    text-decoration: none;
+    border-color: var(--white);
+}
