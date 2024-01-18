@@ -11,7 +11,7 @@ function App() {
   const [pendig, setPendig] = useState(0);
 
   function delet() {
-    setMetas("");
+    // setMetas("");
     setPendig(pendig === 0 ? pendig : pendig - 1);
   }
 
@@ -21,8 +21,7 @@ function App() {
   }
 
   function agregarTarea() {
-    const meta = document.querySelector("");
-    setMetas(...metas, crearMeta(meta));
+    // setMetas(...metas, crearMeta("meta"));
 
     setPendig(pendig + 1);
   }
@@ -49,6 +48,7 @@ function App() {
       </div>
     )
   }
+
   return (
     <div className="App">
       <Input add={agregarTarea} />
@@ -58,10 +58,15 @@ function App() {
       </div>
       <div className='metas-container'>
         <Meta
-          meta={metas}
+          meta={"meta"}
           delet={delet}
           tachar={tachar}
         />
+        {
+          metas.map((item) => (
+            <div>{item}</div>
+          ))
+        }
       </div>
     </div>
   );

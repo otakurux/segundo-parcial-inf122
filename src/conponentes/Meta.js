@@ -5,7 +5,7 @@ import IconB from '../imagenes/iconB.svg';
 
 import '../styles/Meta.css';
 
-function Meta({ meta, delet, tachar }) {
+function Meta({ meta, delet, tachar, key }) {
     return (
         <div className="meta-container">
             <div className='contenedor-nota'>

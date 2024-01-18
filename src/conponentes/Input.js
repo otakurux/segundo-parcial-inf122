@@ -7,7 +7,7 @@ function Input({ add}) {
         <div className='input-container'>
             <h1 className='title'>Mis metas</h1>
             <div className='input-button'>
-                <input type="text" className='input'></input>
+                <input type="text" className='input' id='text'></input>
                 <button className='button' onClick={add}>Agregar</button>
             </div>
         </div>
